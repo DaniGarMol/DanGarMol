@@ -1,19 +1,19 @@
-// //Tomamos el valor de los niños
-// let ninos = parseInt (prompt("Introduce el número de niños: "));
-// console.log ("El número de niños es: " + ninos);
+//Tomamos el valor de los niños
+let ninos = parseInt (prompt("Introduce el número de niños: "));
+console.log ("El número de niños es: " + ninos);
 
-// //Tomamos el valor de las niñas
-// let ninas = parseInt (prompt("Introduce el número de niñas: "));
-// console.log ("El número de niñas es: " + ninas);
+//Tomamos el valor de las niñas
+let ninas = parseInt (prompt("Introduce el número de niñas: "));
+console.log ("El número de niñas es: " + ninas);
 
-// //Calculamos el porcentaje
-// let total = parseInt(ninos) + parseInt(ninas);
-// let porcentajeninos = (parseInt(ninos) * 100)/ total;
-// let porcentajeninas = 100 - porcentajeninos;
+//Calculamos el porcentaje
+let total = parseInt(ninos) + parseInt(ninas);
+let porcentajeninos = (parseInt(ninos) * 100)/ total;
+let porcentajeninas = 100 - porcentajeninos;
 
-// //Mostramos los resultados
-// console.log ("Hay un " + porcentajeninos.toFixed(2) + "% de niños.");
-// console.log ("Hay un " + porcentajeninas.toFixed(2) + "% de niñas.");
+//Mostramos los resultados
+console.log ("Hay un " + porcentajeninos.toFixed(2) + "% de niños.");
+console.log ("Hay un " + porcentajeninas.toFixed(2) + "% de niñas.");
 
 
 //Función cálculo
@@ -46,21 +46,21 @@
 
 
 //Añadimos una variable booleana a los parámetros
-function calcular(nro1, nro2, ver = false){
-        if(ver == false){
-        document.write("Sumar: " + (nro1+nro2) + "<br/>");
-        document.write("Restar: " + (nro1-nro2) + "<br/>");
-        document.write("Producto: " + (nro1*nro2) + "<br/>");
-        document.write("División: " + (nro1/nro2) + "<br/>");
-        document.write("<hr>");
-    } else {
-        document.write("No tengo nada que mostrar!!!")
-    }
-}
+// function calcular(nro1, nro2, ver = false){
+//         if(ver == false){
+//         document.write("Sumar: " + (nro1+nro2) + "<br/>");
+//         document.write("Restar: " + (nro1-nro2) + "<br/>");
+//         document.write("Producto: " + (nro1*nro2) + "<br/>");
+//         document.write("División: " + (nro1/nro2) + "<br/>");
+//         document.write("<hr>");
+//     } else {
+//         document.write("No tengo nada que mostrar!!!")
+//     }
+// }
 
-    // calcular(20, 5, true);
-    calcular(20, 5, false);
-    calcular(20, 5, )
+//     // calcular(20, 5, true);
+//     calcular(20, 5, false);
+//     calcular(20, 5, )
 
 
 
