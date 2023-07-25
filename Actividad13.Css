@@ -57,3 +57,7 @@ section button{
 .oferta{
     display: none;
 }
+
+.comprobar{
+    grid-column: 2/3;
+}
