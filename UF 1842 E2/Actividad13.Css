@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-area: body;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                            "body body body";
+
+    margin: 2vw;
+    gap: 0.5vw;
+
+
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+    margin: 1vw;
+}
+
+section{
+    
+    text-align: center;
+    align-content: center;
+    background-color: rgb(157, 215, 253);
+    padding: 1vw;
+}
+
+section h3{
+    padding: 1vw;
+}
+
+section input{
+    padding: 0.3vw;
+    margin: 0.3vw;
+    border-radius: 10px;
+    border: none;
+}
+
+section button{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    margin: 2vh 0.3vw 1vh;
+    padding: 0.3vw;
+}
+
+.oferta{
+    display: none;
+}
+
+.comprobar{
+    grid-column: 2/3;
+}

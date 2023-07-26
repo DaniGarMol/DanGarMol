@@ -58,6 +58,16 @@ section button{
     display: none;
 }
 
+.imagen{
+    grid-area: body;
+    grid-column: 1/2;
+}
+
+.imagen2{
+    grid-area: body;
+    grid-column: 3/4;
+}
+
 .comprobar{
     grid-column: 2/3;
 }
