@@ -1,64 +1,64 @@
-function grabar(){
-   let contador = 3;
+// Añadir Usuario
+var alumnos =[]
+var mensaje = document.getElementById('mensaje')
+const añadircodigo = document.getElementById('codigo')
+const añadirnombre = document.getElementById('nombre')
+const añadiredad = document.getElementById('edad')
+const añadiremail = document.getElementById('email')
+const añadirtelef = document.getElementById('telef')
 
-    for(i=1; i<=contador; i++){
-        let datos = [];
-    
-        cod = document.getElementById("codigo").value;
-        nombre = document.formulario.name.value;
-        age = document.formulario.Edad.value;
-        mail = document.getElementById("mail").value;
-        phone = document.getElementById("movil").value;
-        option = document.getElementById("select").value;
-    
-        datos.push(cod, nombre, age, mail, phone, option);
-        console.log(datos);
+document.getElementById("botonAñadir").addEventListener("click", function (event) {
+    event.preventDefault()
+    let codigo = añadircodigo.value
+    let nombre = añadirnombre.value
+    let edad = añadiredad.value
+    let email = añadiremail.value
+    let telef = añadirtelef.value
 
-        let usuario = [];
-        usuario.push(datos);
-        console.log(usuario);
+    let van = true
+// Creando objetos
+    if (van == true) {
+        alumnos.push({
+            codigo: codigo,
+            nombre: nombre,
+            edad: edad,
+            email: email,
+            telefono: telef
+        })
+        
+        alert('realizado')
     }
-   
-    // datos[0] = datosusuario0
-    // datos[1] = datosusuario1
-    // datos[2] = datosusuario2
-    // datos[3] = datosusuario3
-    // datos[4] = datosusuario4
-    // datos[5] = datosusuario5
+    if (alumnos.length==3){
+        for(i=0; i<alumnos.length; i++){
+    document.getElementById("listado").innerHTML = codigo + nombre+edad+email+telef
+     }
+    }else{
+            alert("Faltan Alumnos")
+    }
 
-    
+// alumnos.push(
+//     codigo,
+//     nombre,
+//     edad,
+//     email,
+//     telef
+// )
 
+console.log(alumnos)
+let alumno_uno =[];
+let alumno_dos =[];
+let alumno_tres =[];
+alumno_uno=alumnos.slice(0,5)
+alumno_dos=alumnos.slice(5,5)
+alumno_tres=alumnos.slice(10,5)
+console.log(alumno_tres)
+let listado_alumnos=new Array(3)
+listado_alumnos =new Array(alumno_uno,alumno_dos,alumno_tres)
+
+document.getElementById("listar").addEventListener("click", function (event) {
+event.preventDefault()
+
+document.getElementById("listado").innerHTML = listado_alumnos[0]+ "</br>"+listado_alumnos[1]+ "</br>"+listado_alumnos[2]+ "</br>"
+})
 }
-
-
-
-
-//     let datos2 = new Array (6);
-//     cod = document.getElementById("codigo").value;
-//     nombre = document.formulario.name.value;
-//     age = document.formulario.Edad.value;
-//     mail = document.getElementById("mail").value;
-//     phone = document.getElementById("movil").value;
-//     option = document.getElementById("select").value;
-
-//     datos2.push(cod, nombre, age, mail, phone, option);
-
-//     let datos3 = new Array (6);
-//     cod = document.getElementById("codigo").value;
-//     nombre = document.formulario.name.value;
-//     age = document.formulario.Edad.value;
-//     mail = document.getElementById("mail").value;
-//     phone = document.getElementById("movil").value;
-//     option = document.getElementById("select").value;
-
-//     datos3.push(cod, nombre, age, mail, phone, option);
-
-//     datos[0] = datosusuario0
-//     datos[1] = datosusuario1
-//     datos[2] = datosusuario2
-//     datos[3] = datosusuario3
-//     datos[4] = datosusuario4
-//     datos[5] = datosusuario5
-
-//     console.log(datosusuario);
-// }
+)

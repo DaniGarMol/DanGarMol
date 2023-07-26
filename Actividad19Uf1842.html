@@ -3,38 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Actividad19.css">
     <title>Actividad 19 UF 1842</title>
 </head>
-<style>
-    form{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-    }
-    input{
-        margin: 0.5vh 0 1vh;
-    }
-</style>
+
 <body>
-    <form action="" name="formulario">
+    <form action="" name="formulario" >
         <label for="codigo">Código</label>
         <input type="number" name="codigo" id="codigo">
-        <label for="name">Nombre y Apellidos</label>
-        <input type="text" name="name" id="name">
-        <label for="Edad">Edad</label>
-        <input type="number" name="Edad" id="Edad">
-        <label for="mail">Correo electrónico</label>
-        <input type="mail" name="mail" id="mail">
-        <label for="movil">Teléfono</label>
-        <input type="phone" name="movil" id="movil">
-        <select name="select" id="select">
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="Javascript">Javascript</option>
-        </select>
-        <input type="button" value="Enviar" onclick="grabar()">
+        
+        <label for="nombre">Nombre y Apellidos</label>
+        <input type="text" name="nombre" id="nombre">
+        
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad">
+        
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email">
+        
+        <label for="telef">Teléfono</label>
+        <input type="phone" name="telef" id="telef">
+        
+        <input class="button" type="button" id="botonAñadir" value="Añadir">
+        <input class="button" type="button" id="listar" value="Listado">
+    
     </form>
-    <div id="muestra"></div>
+    <div class="contenedorMensaje">
+        <div id="mensaje"></div>
+    </div>
+    <div id="listado"></div>
 
     <script src="Actividad19UF1842.js"></script>
 </body>

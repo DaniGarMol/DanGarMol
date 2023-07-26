@@ -1,0 +1,13 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+input{
+    margin: 0.5vh 0 1vh;
+}
+
+.listado{
+    display: flex;
+    justify-content: space-around;
+}
