@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="media/logo.jpg" alt="">
         <nav>
             <ul>
                 <li><a href="PPF_UF_1842_inicio.html">INICIO</a></li>
@@ -16,6 +17,39 @@
             </ul>
         </nav>
     </header>
-    
+    <div class="principal">
+        <section class="w30">
+            <div class="aside">
+                <h3>Nombre de usuario</h3>
+                <p>Rol</p>
+            </div>
+            
+            <div class="aside">
+                <img src="media/avatar1.jpg" alt="">
+                <h4>Nombre:</h4>
+                <p>correo:</p>
+                <button>Selecciona</button>
+            </div>
+        </section>
+            <div class="informacion">
+                <div class="formulario"><form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                    <label for="mail">Correo electrónico</label>
+                    <input type="mail" id="mail">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="textarea" id="mensaje">
+                    <button id="botonAñadir" value="Añadir">Enviar</button>
+                 </form>
+                <p class="legal">Texto Legal.</p>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>Todos los derechos reservados.</p>
+        </footer>
+    <script src="app.js"></script>
 </body>
 </html>

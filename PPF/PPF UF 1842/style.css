@@ -1,0 +1,157 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img{
+    width: 10vw;
+}
+
+header a{
+    text-decoration: none;
+    color: blue
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    padding: 2vh 5vw;
+    width: 5em;
+    height: 2em;
+    background-color: rgb(230, 235, 248);
+    border-radius: 15px;
+
+}
+
+/* body{
+    height: 100vh;
+} */
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    /* height: 70vh; */
+    background-color: brown;
+    
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/imagen-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90vw;
+}
+
+.informacion button{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 0.5vh 2vw;
+}
+
+.informacion a{
+    color: white;
+    text-decoration: none;
+}
+
+.informacion h1{
+    font-weight: bolder;
+}
+
+.informacion .formulario{
+    background-color: rgb(0, 81, 255);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.informacion form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    
+}
+
+.legal{
+    color: white;
+}
+
+form label{
+    color: white;
+    margin: 1rem;  
+}
+
+form input{
+    border-radius: 15px;
+}
+
+.w30{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border: 3px solid black; 
+    width: 40vw;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* padding: 3rem; */
+}
+
+.aside button{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 0.5vh 2vw;
+}
+
+.aside h3{
+    color: white;
+}
+
+.aside h4{
+    color: white;
+}
+
+.aside p{
+    color: white;
+}
+
+.aside img{
+    margin: 0;
+    width: 30vw;
+}
+
+.aside a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}
