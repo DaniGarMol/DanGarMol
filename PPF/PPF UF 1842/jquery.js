@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".informacion #info").click(function(){
     $(".informacion").css("background-image", "url('media/imagen-curso.jpg')");
-$(".informacion h1,p").css("color", "#ffff00")
+    $(".informacion h1,p").css("color", "#ffff00")
 })
 
     $("#access").click(function(){
@@ -11,6 +11,6 @@ $(".informacion h1,p").css("color", "#ffff00")
         $("button").css("background-color", "white");
         $("button, a, li").css("color", "black");
     })
-})
 
+})
 

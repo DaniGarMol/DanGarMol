@@ -64,6 +64,7 @@ header button{
     background-size: cover;
     background-position: center;
     width: 90vw;
+    
 }
 
 .informacion video{
@@ -161,6 +162,21 @@ form input{
     color: white;
     text-decoration: none;
 }
+
+.modal-desdeAbajo {
+    animation: desdeAbajo 1s;
+  }
+
+  @keyframes desdeAbajo {
+    from {
+      transform: translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 footer{
     text-align: center;
