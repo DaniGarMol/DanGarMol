@@ -5,21 +5,21 @@ window.addEventListener('load', ()=>{
     contacto = document.querySelector("#añadirContacto");
     contenido = document.querySelector(".informacion");
 
-    contenido.innerHTML=`<img src="" alt="">
-    <h1>Entra en nuestra Academia.</h1>
-    <p>Crea tu itinerario informativo.</p>
-    <button><a href="PPF_UF_1842_contacto.html">INFORMACIÓN</a></button>`
+    // contenido.innerHTML=`<img src="" alt="">
+    // <h1>Entra en nuestra Academia.</h1>
+    // <p>Crea tu itinerario informativo.</p>
+    // <button><a href="PPF_UF_1842_contacto.html">INFORMACIÓN</a></button>`
 
-    inicio.addEventListener('click', function(){
-        contenido.innerHTML=`<img src="" alt="">
-        <h1>Entra en nuestra Academia.</h1>
-        <p>Crea tu itinerario informativo.</p>
-        <button><a href="PPF_UF_1842_contacto.html">INFORMACIÓN</a></button>`
-    })
+    // inicio.addEventListener('click', function(){
+    //     contenido.innerHTML=`<img src="" alt="">
+    //     <h1>Entra en nuestra Academia.</h1>
+    //     <p>Crea tu itinerario informativo.</p>
+    //     <button><a href="PPF_UF_1842_contacto.html">INFORMACIÓN</a></button>`
+    // })
 
     curso.addEventListener('click', function(){
         contenido.innerHTML=`<video src="media/VideoClase.mp4" controls></video>`
-    })
+    })<
 
     contacto.addEventListener('click', function(){
         contenido.innerHTML=`<div class="formulario"><form>

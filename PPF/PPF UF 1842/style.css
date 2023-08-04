@@ -8,22 +8,21 @@ header img{
     width: 8vw;
 }
 
-header a{
-    text-decoration: none;
-    color: blue
-}
-
 nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
 
-    
+nav a {
+    text-decoration: none;
+    color: blue;
 }
 
 li {
+    color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,12 +32,19 @@ li {
     height: 2em;
     background-color: rgb(230, 235, 248);
     border-radius: 15px;
+    cursor: pointer;
 
 }
 
-/* body{
-    height: 100vh;
-} */
+header button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 2vh 1vw;
+    cursor: pointer;
+}
 
 .principal{
     display: flex;
