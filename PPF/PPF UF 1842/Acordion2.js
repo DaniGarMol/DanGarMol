@@ -11,13 +11,14 @@ $( function() {
   $(document).ready(function(){
   //Alto Contraste
   $("#access").click(function(){
-    // $("body, button, a, li").css("font-size", "120%");
     $("body, #principal").css("background-color", "black");
-    $("footer, a, li, h2, h1").css("color", "white");
+    $("footer, a, li, h2, h1, p").css("color", "white");
     $("button").css("background-color", "white");
     $("button").css("color", "black");
     $(".ui-accordion .ui-accordion-header").css("background-color", "#000000");
     $(".ui-accordion .ui-accordion-header").css("color", "#ffffff");
+    $(".ui-accordion .ui-accordion-content").css("background-color", "#000000");
+    $(".ui-accordion .ui-accordion-content").css("color", "#ffffff");
 })
 
 
