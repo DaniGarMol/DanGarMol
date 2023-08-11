@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peticiones AJAX en JQuery</title>
+
+    <link rel="stylesheet" href="Actividad1UF1843.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script src="Actividad1UF1843.js"></script>
+
+</head>
+<body>
+    <h1>Llamadas o Peticiones AJAX con JQuery</h1>
+    <form action="https://reqres.in/api/users" method="POST" id="formulario">
+        <label>Código</label>
+        <input type="number" id="codigoAñadir" name="codigo">
+
+        <label>Nombre del Alumno</label>
+        <input type="text" id="nombreAñadir" name="nombre">
+
+        <label>Apellidos del Alumno</label>
+        <input type="text" id="apellidoAñadir" name="apellidos">
+
+        <label>Correo Electrónico</label>
+        <input type="email" id="emailAñadir" name="email">
+
+        <label>Edad</label>
+        <input type="number" id="edadAñadir" name="edad">
+
+        <label>Url Imagen</label>
+        <input type="text" id="ImagenAñadir" name="imagen">
+
+        <input type="submit" value="Registrar">
+    </form>
+<hr>
+
+<div id="datos"></div>
+    
+</body>
+</html>
