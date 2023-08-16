@@ -23,13 +23,14 @@ nav a {
 
 li {
     color: blue;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin-top: 1vh;
-    padding: 2vh 5vw;
-    width: 5em;
-    height: 2em;
+    width: 12rem;
+    height: 3em;
     background-color: rgb(230, 235, 248);
     border-radius: 15px;
     cursor: pointer;
@@ -140,4 +141,7 @@ form input{
 
 footer{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

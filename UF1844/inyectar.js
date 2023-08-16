@@ -5,7 +5,10 @@ window.addEventListener('load', ()=>{
     info = document.querySelector("#añadirInfo");
     curso = document.querySelector("#añadirCurso");
     contacto = document.querySelector("#añadirContacto");
+    legal = document.querySelector("#añadirLegal");
+    app = document.querySelector("#añadirApli");
     contenido = document.querySelector(".informacion");
+    
 
     // contenido.innerHTML=`<img src="" alt="">
     // <h1>Entra en nuestra Academia.</h1>
@@ -17,12 +20,12 @@ window.addEventListener('load', ()=>{
         contenido.innerHTML=`<div class="formulario"><h3>Acceso</h3>
         <form action="">
         <label for="">Usuario</label>
-        <input type="text">
+        <input type="text" id="usuario" name="usuario">
 
         <label for="">Contraseña</label>
-        <input type="password">
+        <input type="password" id="contraseña" name="contraseña">
         
-        <button id="botonAñadir" value="Añadir" onclick="formulario()">Enviar</button>
+        <button id="botonAñadir" value="Añadir">Enviar</button>
         </form></div>`
     })
 
@@ -82,20 +85,34 @@ window.addEventListener('load', ()=>{
      </form><p class="legal">Texto Legal.</p>
      </div>`
     })
+
+    legal.addEventListener('click', function(){
+        contenido.innerHTML=`<div class="formulario">
+        <h3>Textos Legales</h3>
+        <p class="legal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.</p>
+     </div>`
+    })
+
+    app.addEventListener('click', function(){
+        contenido.innerHTML=`<div class="formulario">
+        <h3>Información de Uso de la Aplicación</h3>
+        <p class="legal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.</p>
+     </div>`
+    })
 })
 
 
-function formulario(){
-    var alumno={
-        nombres: document.querySelector("#nombre").value,
-        correo: document.querySelector("#mail").value,
-        asunto: document.querySelector("#asunto").value,
-        mensaje: document.querySelector("#mensaje").value
-    }
-    var alumnos = [];
-    alumnos.push(alumno);
-    localStorage.setItem('alumnos', JSON.stringify(alumnos));
-}
+// function formulario(){
+//     var alumno={
+//         nombres: document.querySelector("#nombre").value,
+//         correo: document.querySelector("#mail").value,
+//         asunto: document.querySelector("#asunto").value,
+//         mensaje: document.querySelector("#mensaje").value
+//     }
+//     var alumnos = [];
+//     alumnos.push(alumno);
+//     localStorage.setItem('alumnos', JSON.stringify(alumnos));
+// }
 
 $( function() {
     $( "#accordion" ).accordion();
