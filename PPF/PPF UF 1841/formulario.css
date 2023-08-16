@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2AA1F;
+}
+
+.formulario{
+    background-color: #114358;
+    margin: 20vw;
+    padding: 5vw;
+    text-align:center;
+    border-radius: 20px;
+}
+
+.formulario label{
+    margin: 1vw 1vh;
+    text-align: start;
+    color: #ffffff;
+}
+
+.formulario input{
+    margin: 1vw 1vh;
+    text-align: start;
+}
+
+#boton{
+    background-color: #F2AA1F;
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
