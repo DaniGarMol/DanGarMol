@@ -8,9 +8,7 @@ $("#botonAñadir").click(function(e){
     contraseña: $('input[name="contraseña"]').val()
 };
 
-    console.log(datos);
-
-    $(".datos").html('<p> ${datos} </p>');
+    $(".datos").html(datos);
 
 });
 

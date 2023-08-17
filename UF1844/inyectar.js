@@ -10,11 +10,6 @@ window.addEventListener('load', ()=>{
     contenido = document.querySelector(".informacion");
     
 
-    // contenido.innerHTML=`<img src="" alt="">
-    // <h1>Entra en nuestra Academia.</h1>
-    // <p>Crea tu itinerario informativo.</p>
-    // <button><a href="PPF_UF_1842_contacto.html">INFORMACIÓN</a></button>`
-
     acceso.addEventListener('click', function(){
         
         contenido.innerHTML=`<div class="formulario"><h3>Acceso</h3>
@@ -25,10 +20,69 @@ window.addEventListener('load', ()=>{
         <label for="">Contraseña</label>
         <input type="password" id="contraseña" name="contraseña">
         
-        <button id="botonAñadir" value="Añadir">Enviar</button>
-        </form></div>`
+        <button id="botonAcceso" value="Añadir">Enviar</button>
+        </form></div>`;
+
+        $("#botonAcceso").click(function(e){
+            e.preventDefault();
+
+            var usuario = $('input[name="usuario"]').val();
+            var contraseña = $('input[name="contraseña"]').val();
+
+            var datos = `Usuario: ${usuario}`;
+
+            $("#userdata").html("<p>"+ datos +"</p>");
+
+    });
+
+});
+
+//STILOS COLORES
+
+$(document).ready(function(){
+    var naranja = $("#uno");
+    var rojo = $("#dos");
+    var verde = $("#tres");
+    var azul = $("#cuatro");
+
+    $(naranja).click(function(){
+        $("li").css('color', 'darkorange');
+        $("a").css('color', 'darkorange');
+        $(".titulo").css('background-color', 'darkorange');
+        $("header").css('background-color', 'rgba(255, 140, 0, 0.295)');
+        $("footer").css('background-color', 'rgba(255, 140, 0, 0.295)');
+    
     })
 
+    $(rojo).click(function(){
+        $("li").css('color', 'darkred');
+        $("a").css('color', 'darkred');
+        $(".titulo").css('background-color', 'darkred');
+        $("header").css('background-color', 'rgba(139, 0, 0, 0.24)');
+        $("footer").css('background-color', 'rgba(139, 0, 0, 0.24)');
+        
+        
+    })
+
+    $(verde).click(function(){
+        $("li").css('color', 'darkgreen');
+        $("a").css('color', 'darkgreen');
+        $(".titulo").css('background-color', 'darkgreen');
+        $("header").css('background-color', 'rgba(0, 100, 0, 0.384)');
+        $("footer").css('background-color', 'rgba(0, 100, 0, 0.384)');
+        
+    })
+
+    $(azul).click(function(){
+        $("li").css('color', 'rgb(0, 81, 255)');
+        $("a").css('color', 'rgb(0, 81, 255)');
+        $(".titulo").css('background-color', 'rgb(0, 81, 255)');
+        $("header").css('background-color', 'rgba(0, 81, 255, 0.404)');
+        $("footer").css('background-color', 'rgba(0, 81, 255, 0.404)');
+        
+    })
+
+});
     registro.addEventListener('click', function(){
         contenido.innerHTML=`<div class="formulario">
         <h3>Registro</h3>
@@ -46,13 +100,49 @@ window.addEventListener('load', ()=>{
         <label>Edad</label>
         <input type="number" id="edadAñadir" name="edad">
 
+        <label>Contraseña</label>
+        <input type="password" id="passAñadir" name="contraseña">
+
         <label>Url Imagen</label>
         <input type="text" id="ImagenAñadir" name="imagen">
 
-        <button id="botonAñadir" value="Añadir" onclick="formulario()">Enviar</button>
-     </form><p class="legal">Texto Legal.</p>
-     </div>`
-    })
+        <button id="botonAñadir" value="Añadir">Enviar</button>
+     </form>
+     <p class="legal">Texto Legal.</p>
+     </div>`;
+
+     $("#botonAñadir").click(function(e){
+        e.preventDefault();
+
+        var nombre = $('#nombreAñadir').val();
+        var apellidos = $('#apellidoAñadir').val();
+        var email = $('#emailAñadir').val();
+        var edad = $('#edadAñadir').val();
+        var contraseña = $('#passAñadir').val();
+        var imagen = $('#ImagenAñadir').val();
+        var datos2 = {
+            nombre: nombre,
+            apellidos: apellidos,
+            email: email,
+            edad: edad,
+            contraseña: contraseña,
+            imagen: imagen
+        };
+
+        //Obtener datos existentes del Local Storage si los hay
+        var registros = JSON.parse(localStorage.getItem('registros')) || [];
+        registros.push(datos2);
+
+        //Almacenar los datos actualizados en el Local Storage
+        localStorage.setItem('registros', JSON.stringify(registros));
+
+        //Limpiar el formulario
+        $('input[type="text"], input[type="email"], input[type="number"]').val('');
+
+     });
+
+
+    });
 
     info.addEventListener('click', function(){
         contenido.innerHTML=`<div class="formulario">
@@ -99,21 +189,9 @@ window.addEventListener('load', ()=>{
         <p class="legal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id velit sapiente perferendis, unde quia esse fugit aspernatur odio praesentium quidem placeat minus accusamus aut modi earum sequi iste corrupti.</p>
      </div>`
     })
-})
-
-
-// function formulario(){
-//     var alumno={
-//         nombres: document.querySelector("#nombre").value,
-//         correo: document.querySelector("#mail").value,
-//         asunto: document.querySelector("#asunto").value,
-//         mensaje: document.querySelector("#mensaje").value
-//     }
-//     var alumnos = [];
-//     alumnos.push(alumno);
-//     localStorage.setItem('alumnos', JSON.stringify(alumnos));
-// }
+});
 
 $( function() {
     $( "#accordion" ).accordion();
   } );
+
