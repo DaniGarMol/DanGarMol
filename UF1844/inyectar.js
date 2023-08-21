@@ -171,7 +171,7 @@ $(document).ready(function(){
         <label for="">Mensaje</label>
         <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un comentario"></textarea>
 
-        <button id="botonAñadir" value="Añadir" onclick="formulario()">Enviar</button>
+        <button id="botonAñadir" value="Añadir">Enviar</button>
      </form><p class="legal">Texto Legal.</p>
      </div>`
     })
