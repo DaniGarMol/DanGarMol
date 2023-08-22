@@ -4,6 +4,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --color1: #cdeae8;
+    --color2: #0d3f7c;
+    --color3: #00214A;
+    --color4: #04bbec;
+    --color5: #ea25b5;
+    --color6: #ff82f4;
 
 }
 
@@ -12,8 +21,8 @@ body{
 }
 
 ul{
-    background-color: #00214A;
-    color: #04BBEC;
+    background-color: var(--color3);
+    color:  var(--color4);
     border-radius: 20px;
     box-shadow: 3px 8px 8px black;
 }
