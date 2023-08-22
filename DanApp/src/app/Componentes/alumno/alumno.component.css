@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 :root{
     --color1: #cdeae8;
     --color2: #0d3f7c;
@@ -16,9 +9,15 @@
 
 }
 
-body{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: 'Quicksand', sans-serif;
+
 }
+
+
 
 ul{
     background-color: var(--color3);

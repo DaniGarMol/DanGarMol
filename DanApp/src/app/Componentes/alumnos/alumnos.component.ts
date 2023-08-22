@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { alumnosBD } from 'src/app/Modelos/alumnosBD';
 
 @Component({
   selector: 'app-alumnos',
@@ -6,13 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./alumnos.component.css']
 })
 export class AlumnosComponent {
-  public Alumno1: string
-  public Alumno2: string
-  public Alumno3: string
+  public alumnosAll: Array<alumnosBD>
 
   constructor(){
-    this.Alumno1="Daniel García Molina"
-    this.Alumno2="Jose Lersundi Coco "
-    this.Alumno3="Samuel Alonso Hernández"
+    this.alumnosAll=[
+      new alumnosBD('Daniel', 'García Molina', 47, 'adeg@gmail.com', '622900500', 'https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page', true),
+      new alumnosBD('Jose', 'Lersundi Coco', 38, 'degcoco@gmail.com', '600300100', 'https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page', true),
+      new alumnosBD('Samuel', 'Alonso Hernández', 48, 'samles@gmail.com', '699633777', 'https://thecatapi.com/api/images/get?format=src&type=gif?results_per_page', false)
+    ]
   }
 }
