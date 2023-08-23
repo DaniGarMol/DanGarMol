@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-:root{
-    --color1: #cdeae8;
-    --color2: #0d3f7c;
-    --color3: #00214A;
-    --color4: #04bbec;
-    --color5: #ea25b5;
-    --color6: #ff82f4;
 
-}
 
 *{
     box-sizing: border-box;
@@ -20,6 +12,7 @@
 h3{
     background-color: #00214A;
     color:  #cdeae8;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
     text-align: center;
     width: 30vw;
 }
@@ -30,7 +23,18 @@ ul{
     color:  #00214A;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 3px 3px 8px black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
     text-align: center;
     width: 30vw;
+}
+
+li{
+    list-style: none;
+    padding: 1rem;
+}
+
+img{
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #00214A;
 }

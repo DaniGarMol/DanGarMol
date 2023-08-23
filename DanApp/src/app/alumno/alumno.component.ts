@@ -23,7 +23,7 @@ implements OnInit {
     // this.Correo_Electronico="adg@h.com"
     // this.Imagen="https://thecatapi.com/api/images/getÇ?format=src&type=gif?results_per-page"
     this.alumnosAll=[
-      new alumnosBD('Daniel', 'García Molina', 47, 'adeg@gmail.com', '622900500', 'https://thecatapi.com/api/images/getÇ?format=src&type=gif?results_per-page=', true)
+      new alumnosBD('Daniel', 'García Molina', 47, 'adeg@gmail.com', '622900500', 'https://i.pinimg.com/originals/39/e9/b3/39e9b39628e745a39f900dc14ee4d9a7.jpg', true)
     ]
   }
 
