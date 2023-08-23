@@ -1,9 +1,10 @@
 <!-- <p>cursos works!</p> -->
 <h3>Listado de Cursos</h3>
 <ul id="CourseList">
-    <li>{{Curso1}}</li>
-    <li>{{Curso2}}</li>
-    <li>{{Curso3}}</li>
+    <li *ngFor="let lista of cursosAll">{{lista.nombreC}}<br>
+    {{lista.infoC}}<br>
+    {{lista.fechaC}}</li>
+  
 </ul>
 
 <button></button>

@@ -1,6 +1,7 @@
 <!-- <p>curso works!</p> -->
 <h3>{{NombreCurso}}</h3>
-<p>{{InfoCurso}}</p>
-<img src="{{Imagen+1}}" alt="imagen de gatos">
+<li *ngFor="let dato of cursoAll">{{dato.nameC}}<br>
+{{dato.dateC}}<br>
+{{dato.descripC}}<br>
 
-<button></button>
+{{dato.TemarioC}}</li>

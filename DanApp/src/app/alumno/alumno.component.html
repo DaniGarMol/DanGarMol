@@ -1,11 +1,12 @@
 <!-- <p>alumno works!</p> -->
 <h3>Datos del alumno</h3>
 <ul id="StudentData">
-    <li *ngFor=" let datos of alumnosAll">{{datos.nombreA}} {{datos.apellidoA}}<br>
+    <li *ngFor=" let datos of alumnosAll"><img src="{{datos.fotoA}}" alt="foto1"><br>
+    {{datos.nombreA}} {{datos.apellidoA}}<br>
     {{datos.edadA}}<br>
-    {{datos.correoA}}<br>
-   <img src="{{datos.fotoA}}" alt="foto1"></li>
+    {{datos.correoA}}
+   </li>
 
 </ul>
 
-<button></button>
+

@@ -17,11 +17,20 @@
 
 }
 
+h3{
+    background-color: #00214A;
+    color:  #cdeae8;
+    text-align: center;
+    width: 30vw;
+}
 
 
 ul{
-    background-color: var(--color3);
-    color:  var(--color4);
-    border-radius: 20px;
-    box-shadow: 3px 8px 8px black;
+    background-color: #cdeae8;
+    color:  #00214A;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+    width: 30vw;
 }
