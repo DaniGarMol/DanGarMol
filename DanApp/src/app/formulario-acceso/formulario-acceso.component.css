@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+body{
+    margin: 1rem;
+}
+
+h3{
+    background-color: #00214A;
+    color:  #cdeae8;
+    text-align: center;
+    width: 25vw;
+    padding: 0.4rem;
+}
+
+
+.formulario{
+    background-color: #cdeae8;
+    color:  #00214A;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+    text-align: center;
+    width: 25vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{    
+    padding: 1rem;
+}
+
+input{
+    margin: 0 3rem;
+    border: 1px #00214A;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #04bbec;
+    color: #00214A;
+    margin: 3rem;
+    padding: 0.4rem;
+    border-radius: 15px;
+}
+
+p{
+    padding-bottom: 3rem;
+}

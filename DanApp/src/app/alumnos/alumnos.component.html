@@ -1,7 +1,12 @@
 <!-- <p>alumnos works!</p> -->
+<body>
+    
 <h3>Listado de Alumnos</h3>
 <ul id="StudentData">
-    <li *ngFor=" let listado of alumnosAll">{{listado.nombreA}} {{listado.apellidoA}}</li>
+    <li *ngFor=" let listado of alumnosAll">{{listado.nombreA}} {{listado.apellidoA}} - <span *ngIf="listado.estadoA != false">MATRICULADO</span>
+
+    </li>
 </ul>
 
-<button></button>
+
+</body>

@@ -8,6 +8,7 @@ import { alumnosBD } from 'src/app/Modelos/alumnosBD';
 })
 export class AlumnoComponent 
 implements OnInit {
+  public Nota: number
   // public Nombre: string
   // public Apellidos: string
   // public Edad: number
@@ -17,6 +18,7 @@ implements OnInit {
   
 
   constructor (){
+    this.Nota=0
     // this.Nombre="nombre"
     // this.Apellidos="apellidos"
     // this.Edad=47

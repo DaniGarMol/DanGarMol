@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario-consulta.component.css']
 })
 export class FormularioConsultaComponent {
+  public name: string
+  public mail: string
+  public mess: string
 
+  constructor(){
+    this.name = ""
+    this.mail = ""
+    this.mess = ""
+  }
 }

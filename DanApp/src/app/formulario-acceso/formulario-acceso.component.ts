@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulario-acceso.component.css']
 })
 export class FormularioAccesoComponent {
+  public Usuario: string
+  public Contraseña: string
 
+  constructor(){
+  this.Usuario = ""
+  this.Contraseña = ""
+}
 }

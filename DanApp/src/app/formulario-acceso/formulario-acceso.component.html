@@ -1,12 +1,17 @@
 <!-- <p>formulario-acceso works!</p> -->
+<body>
+    
 <div class="formulario"><h3>Acceso</h3>
     <form action="">
         <label for="">Usuario</label>
-        <input type="text" id="usuario" name="usuario">
+        <input [(ngModel)]="Usuario" type="text" id="usuario" name="usuario">
 
         <label for="">Contraseña</label>
-        <input type="password" id="contraseña" name="contraseña">
+        <input [(ngModel)]="Contraseña" type="password" id="contraseña" name="contraseña">
         
         <button id="botonAcceso" value="Añadir">Enviar</button>
     </form>
 </div>
+
+
+</body>

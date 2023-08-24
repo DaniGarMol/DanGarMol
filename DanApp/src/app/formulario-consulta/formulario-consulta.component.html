@@ -1,14 +1,20 @@
 <!-- <p>formulario-consulta works!</p> -->
+<body>
+    
 <div class="formulario"><form action=""><h3>Consulta</h3>
     <label for="">Nombre</label>
-    <input type="text" placeholder="Nombre y Apellidos">
+    <input [(ngModel)]="name" type="text" placeholder="Nombre y Apellidos">
 
     <label for="">Correo</label>
-    <input type="email" placeholder="ejemplo@gmial.com">
+    <input [(ngModel)]="mail" type="email" placeholder="ejemplo@gmial.com">
 
     <label for="">Mensaje</label>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un comentario"></textarea>
+    <textarea [(ngModel)]="mess" name="" id="" cols="30" rows="10" placeholder="Escriba un comentario"></textarea>
 
     <button id="botonAñadir" value="Añadir">Enviar</button>
- </form><p class="legal">Texto Legal.</p>
+     <p class="legal">Texto Legal.</p>
+ </form>
+
  </div>
+ 
+</body>

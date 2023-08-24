@@ -18,6 +18,6 @@ export class ProfesorComponent {
     this.Apellidos="Hernández Guerra"
     this.Edad=43
     this.Mail="Gaster@gmail.com"
-    this.Imagen="https://thecatapi.com/api/images/getÇ?format=src&type=gif?results_per-page"
+    this.Imagen="https://i.pinimg.com/originals/39/e9/b3/39e9b39628e745a39f900dc14ee4d9a7.jpg"
   }
 }

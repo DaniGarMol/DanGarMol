@@ -1,4 +1,7 @@
 <!-- <p>alumno works!</p> -->
+<body>
+    
+
 <h3>Datos del alumno</h3>
 <ul id="StudentData">
     <li *ngFor=" let datos of alumnosAll"><img src="{{datos.fotoA}}" alt="foto1"><br><br>
@@ -7,6 +10,10 @@
     {{datos.correoA}}
    </li>
 
+
+<p>Añadir Nota</p>
+<input type="number" [(ngModel)]="Nota">
+<p>Nota: {{Nota}}</p>
+
 </ul>
-
-
+</body>
