@@ -21,5 +21,4 @@ export class FormularioRegistroComponent {
   this.pass = ""
   this.imagen = ""
 }
-
 }

@@ -7,10 +7,16 @@ import { Component } from '@angular/core';
 })
 export class FormularioAccesoComponent {
   public Usuario: string
-  public Contraseña: string
+  public Contrasena: string
+  public enviar: boolean
 
   constructor(){
   this.Usuario = ""
-  this.Contraseña = ""
+  this.Contrasena = ""
+  this.enviar = false
+}
+
+correcto(){
+  this.enviar= true
 }
 }
