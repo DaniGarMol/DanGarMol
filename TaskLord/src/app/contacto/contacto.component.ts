@@ -7,19 +7,19 @@ import { Component } from '@angular/core';
 })
 export class ContactoComponent {
 
-  public name: string
+  public nameFull: string
   public mail: string
   public mess: string
 
   constructor(){
-  this.name = ""
+  this.nameFull = ""
   this.mail = ""
   this.mess = ""
 }
 
 submitForm(){
   console.log('Formulario enviado')
-  console.log(this.name)
+  console.log(this.nameFull)
   console.log(this.mail)
   console.log(this.mess)
 }
