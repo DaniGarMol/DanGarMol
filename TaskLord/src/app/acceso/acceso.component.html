@@ -1,0 +1,16 @@
+<!-- <p>acceso works!</p> -->
+<div class="formulario"><h3>Acceso</h3>
+    
+    <form (ngSubmit)="submitForm()">
+        <label for="">Usuario</label>
+        <input [(ngModel)]="usuarioAcc" type="text" id="usuario" name="usuario">
+
+        <label for="">Correo Electrónico</label>
+        <input [(ngModel)]="emailAcc" type="text" id="usuario" name="usuario">
+
+        <label for="">Contraseña</label>
+        <input [(ngModel)]="contrasenaAcc" type="password" id="contraseña" name="contraseña">
+        
+        <button id="botonAcceso" value="Añadir">Enviar</button>
+    </form>
+</div>

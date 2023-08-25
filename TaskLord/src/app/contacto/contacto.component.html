@@ -1,0 +1,18 @@
+<!-- <p>contacto works!</p> -->
+<div class="formulario"><h3>Consulta</h3>
+
+<form (ngSubmit)="submitForm()">
+    <label for="">Nombre</label>
+    <input [(ngModel)]="name" type="text" placeholder="Nombre y Apellidos">
+
+    <label for="">Correo</label>
+    <input [(ngModel)]="mail" type="email" placeholder="ejemplo@gmial.com">
+
+    <label for="">Mensaje</label>
+    <textarea [(ngModel)]="mess" name="" id="" cols="30" rows="10" placeholder="Escriba un comentario"></textarea>
+
+    <button id="botonAñadir" value="Añadir">Enviar</button>
+     <p class="legal">Texto Legal.</p>
+</form>
+
+</div>

@@ -16,6 +16,13 @@ export class FormularioAccesoComponent {
   this.enviar = false
 }
 
+submitForm(){
+  console.log('Formulario enviado')
+  console.log(this.Usuario)
+  console.log(this.Contrasena)
+  console.log(this.enviar)
+}
+
 correcto(){
   this.enviar= true
 }
