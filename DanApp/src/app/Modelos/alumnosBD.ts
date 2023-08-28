@@ -8,5 +8,6 @@ export class alumnosBD{
         public telefonoA: string,
         public fotoA: string,
         public estadoA: boolean,
+        public nota: number,
     ){}
 }
