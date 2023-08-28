@@ -31,10 +31,10 @@ ul{
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
     text-align: center;
     width: 25vw;
-    list-style: none;
 }
 
 li{
-    list-style: none;
     padding: 1rem;
+    list-style: none;
+    
 }

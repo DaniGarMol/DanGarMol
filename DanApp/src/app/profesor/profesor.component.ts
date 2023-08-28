@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { profesoresBD } from 'src/app/Modelos/profesoresBD';
 
 @Component({
   selector: 'app-profesor',
@@ -6,18 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./profesor.component.css']
 })
 export class ProfesorComponent {
-  public Nombre: string
-  public Apellidos: string
-  public Edad: number
-  public Mail: string
-  public Imagen: string
+  public profesoresAll: Array<profesoresBD>
 
 
   constructor(){
-    this.Nombre="Armiche"
-    this.Apellidos="Hernández Guerra"
-    this.Edad=43
-    this.Mail="Gaster@gmail.com"
-    this.Imagen="https://i.pinimg.com/originals/39/e9/b3/39e9b39628e745a39f900dc14ee4d9a7.jpg"
+    this.profesoresAll=[
+      new profesoresBD('Armiche', 'Hernández Guerra', 43, 'gaster@gmail.com', '622900500', 'https://i.pinimg.com/originals/39/e9/b3/39e9b39628e745a39f900dc14ee4d9a7.jpg', true)
+    ]
   }
 }
+

@@ -3,9 +3,9 @@
     
 <h3>Listado de Profesores</h3>
 <ul id="TeacherList">
-    <li>{{Profesor1}}</li>
-    <li>{{Profesor2}}</li>
-    <li>{{Profesor3}}</li>
+    <li *ngFor="let listado of profesoresAll">{{listado.nombreP}} {{listado.apellidoP}}
+
+    </li>
 </ul>
 
 

@@ -3,11 +3,13 @@
     
 <h3>Datos del Profesor</h3>
 <ul id="TeacherData">
-    <img src="{{Imagen}}" alt="Foto Perfil de Maestro">
-    <li>{{Nombre}}</li>
-    <li>{{Apellidos}}</li>
-    <li>{{Edad}}</li>
-    <li>{{Mail}}</li>
+    <li *ngFor="let datos of profesoresAll">
+    <img src="{{datos.fotoP}}" alt="Foto Perfil de Maestro"><br><br>
+    {{datos.nombreP}} {{datos.apellidoP}}<br><br>
+    {{datos.edadP}}<br><br>
+    {{datos.correoP}}
+
+</li>
     
 </ul>
 
