@@ -11,6 +11,7 @@ import { ProfesorComponent } from './profesor/profesor.component';
 import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso.component';
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
+import { CrearCursoComponent } from './crear-curso/crear-curso.component';
 
 const routes: Routes = [
 {path: '',component:AppComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
 {path: 'formulario-acceso', component:FormularioAccesoComponent},
 {path: 'formulario-registro', component:FormularioRegistroComponent},
 {path: 'formulario-consulta', component:FormularioConsultaComponent},
+{path: 'crear_curso', component:CrearCursoComponent},
 {path: '**', component:AppComponent}
 ];
 

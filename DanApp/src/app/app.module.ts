@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoComponent } from './curso/curso.component';
@@ -15,6 +17,7 @@ import { FormularioRegistroComponent } from './formulario-registro/formulario-re
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CrearCursoComponent } from './crear-curso/crear-curso.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,14 @@ import { FooterComponent } from './footer/footer.component';
     FormularioRegistroComponent,
     FormularioConsultaComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CrearCursoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

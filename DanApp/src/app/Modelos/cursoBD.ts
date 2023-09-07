@@ -1,9 +1,13 @@
 export class cursoBD{
+    static _id: string;
     constructor(
-        public nameC: string,
-        public descripC: string,
-        public dateC: string,
-        public TemarioC: string,
+        public _id: string,
+        public name: string,
+        public description: string,
+        public category: string,
+        public duracion: number,
+        public temas: string,
+        public image: string,
         
     ){}
 }
