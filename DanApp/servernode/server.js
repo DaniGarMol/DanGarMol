@@ -13,6 +13,9 @@ app.use(userRouters)
 const cursosRouters = require('./routes/cursos')
 app.use(cursosRouters)
 
+const cursoRouters = require('./routes/curso')
+app.use(cursoRouters)
+
 // Conexión con Base datos
 
 const mongoose = require('mongoose')
