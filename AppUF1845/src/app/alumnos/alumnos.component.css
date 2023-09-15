@@ -1,7 +1,3 @@
-
-
-.marcado{
-    font-size: 1.2em;
-    color: green;
-    font-weight: 800;
-}
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
