@@ -44,6 +44,7 @@ import { TareasComponent } from './tareas/tareas.component';
     CursoComponent,
     AlumnosComponent,
     AccesoComponent,
+    ProfesoresComponent,
     RegistroComponent,
     ContactoComponent,
     CrearcursoComponent,
