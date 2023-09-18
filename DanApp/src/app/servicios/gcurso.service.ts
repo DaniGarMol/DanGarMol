@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { cursoBD } from '../Modelos/cursoBD';
+import { EvalE2BD } from '../Modelos/EvalE2BD';
 
 @Injectable({
   providedIn: 'root'
@@ -16,19 +16,19 @@ export class save_cursoService {
     return this.http.get(this.url)
   }
 
-//   eliminarCurso(id: string): Observable<any> {
-//     return this.http.delete(this.url + id);
-//   }
+  eliminarCurso(id: string): Observable<any> {
+    return this.http.delete(this.url + id);
+  }
 
-  guardarCurso(curso: cursoBD): Observable<any> {
+  guardarCurso(curso: EvalE2BD): Observable<any> {
     return this.http.post(this.url, curso);
   }
 
-//   obtenerCurso(id: string): Observable<any> {
-//     return this.http.get(this.url + id);
-//   }
+  obtenerCurso(id: string): Observable<any> {
+    return this.http.get(this.url + id);
+  }
 
-  editarCurso(id: string, curso: cursoBD): Observable<any>{
+  editarCurso(id: string, curso: EvalE2BD): Observable<any>{
     return this.http.put(this.url + id, curso)
 
   }
