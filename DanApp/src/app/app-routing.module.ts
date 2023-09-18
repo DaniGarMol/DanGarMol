@@ -12,6 +12,7 @@ import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso
 import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 import { FormularioConsultaComponent } from './formulario-consulta/formulario-consulta.component';
 import { CrearCursoComponent } from './crear-curso/crear-curso.component';
+import { EvalE2Component } from './eval-e2/eval-e2.component';
 
 const routes: Routes = [
 {path: '',component:AppComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
 {path: 'formulario-registro', component:FormularioRegistroComponent},
 {path: 'formulario-consulta', component:FormularioConsultaComponent},
 {path: 'crear_curso', component:CrearCursoComponent},
+{path: 'evalE2', component:EvalE2Component},
 {path: '**', component:AppComponent}
 ];
 

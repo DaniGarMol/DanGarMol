@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ToastrService } from 'ngx-toastr';
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +20,7 @@ import { FormularioConsultaComponent } from './formulario-consulta/formulario-co
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CrearCursoComponent } from './crear-curso/crear-curso.component';
+import { EvalE2Component } from './eval-e2/eval-e2.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +36,12 @@ import { CrearCursoComponent } from './crear-curso/crear-curso.component';
     FormularioConsultaComponent,
     HeaderComponent,
     FooterComponent,
-    CrearCursoComponent
+    CrearCursoComponent,
+    EvalE2Component
   ],
   imports: [
+    ReactiveFormsModule, 
+    ToastrService,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
