@@ -1,44 +1,74 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width" id="titulo">
-    <mat-label>Company (disabled)</mat-label>
-    <input matInput disabled value="Google">
-  </mat-form-field>
-
-  <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Nombre</mat-label>
-      <input matInput>
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Apellidos</mat-label>
-      <input matInput>
-    </mat-form-field></td>
-  </tr></table>
-
-  <p>
-    <mat-form-field class="example-full-width">
-      <mat-label>Dirección</mat-label>
-      <textarea matInput placeholder="Ex. 100 Main St">C/ Alegría, 14</textarea>
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <textarea matInput placeholder="Ex. 100 Main St">ejemplo@correo.com</textarea>
-    </mat-form-field>
-  </p>
-
-  <table class="example-full-width" cellspacing="0"><tr>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Ciudad</mat-label>
-      <input matInput placeholder="Ex. San Francisco">
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Provincia</mat-label>
-      <input matInput placeholder="Ex. California">
-    </mat-form-field></td>
-    <td><mat-form-field class="example-full-width">
-      <mat-label>Código Postal</mat-label>
-      <input matInput #postalCode maxlength="5" placeholder="Ex. 94105" value="35010">
-      <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
-    </mat-form-field></td>
-  </tr></table>
-</form>
+<div class="container mt-15">
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="card">
+              <div class="card-body text-center">
+                  <span class="titulo">{{ titulo | uppercase }}</span>
+                  <form class="mb-3" [formGroup]="registroForm" (ngSubmit)="agregarUsuario()">
+                    <!-- Nombre -->
+                      <div class="mb-3">
+                          <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre">
+                          <div class="text-danger" *ngIf="registroForm.get('nombre')?.hasError('required') && registroForm.get('nombre')?.touched">
+                              <span>El nombre es obligatorio</span>
+                          </div>
+                      </div>
+                      <!-- Apellidos -->
+                      <div class="mb-3">
+                          <input type="text" formControlName="apellidos" class="form-control" placeholder="Apellidos">
+                          <div class="text-danger" *ngIf="registroForm.get('apellidos')?.hasError('required') && registroForm.get('apellidos')?.touched">
+                              <span>Los apellidos son obligatorios</span>
+                          </div>
+                      </div>
+                      <!-- Fnacimiento -->
+                      <div class="mb-3">
+                          <input type="text" formControlName="Fnacimiento" class="form-control" placeholder="Fecha de nacimiento">
+                          <div class="text-danger" *ngIf="registroForm.get('Fnacimiento')?.hasError('required') && registroForm.get('Fnacimiento')?.touched">
+                              <span>La Fecha de Nacimiento es obligatoria</span>
+                          </div>
+                      </div>
+                      <!-- email -->
+                      <div class="mb-3">
+                          <input type="text" formControlName="email" class="form-control" placeholder="Email">
+                          <div class="text-danger" *ngIf="registroForm.get('email')?.hasError('required') && registroForm.get('email')?.touched">
+                              <span>El Email es obligatorio</span>
+                          </div>
+                      </div>
+                      <!-- telefono -->
+                      <div class="mb-3">
+                          <input type="text" formControlName="telefono" class="form-control" placeholder="Telefono">
+                          <div class="text-danger" *ngIf="registroForm.get('telefono')?.hasError('required') && registroForm.get('telefono')?.touched">
+                              <span>El Telefono es obligatorio</span>
+                          </div>
+                      </div>
+                      <!-- foto -->
+                      <div class="mb-3">
+                        <input type="text" formControlName="foto" class="form-control" placeholder="Url de la imagen">
+                        <div class="text-danger" *ngIf="registroForm.get('foto')?.hasError('required') && registroForm.get('foto')?.touched">
+                            <span>La imagen es obligatoria</span>
+                        </div>
+                      </div>
+                      <!-- pass -->
+                      <div class="mb-3">
+                        <input type="text" formControlName="pass" class="form-control" placeholder="Contraseña">
+                        <div class="text-danger" *ngIf="registroForm.get('pass')?.hasError('required') && registroForm.get('pass')?.touched">
+                            <span>La Contraseña es obligatoria</span>
+                        </div>
+                      </div>
+                      <!-- tipo -->
+                      <div class="mb-3">
+                        <input type="text" formControlName="tipo" class="form-control" placeholder="Profesor o Alumno">
+                        <div class="text-danger" *ngIf="registroForm.get('tipo')?.hasError('required') && registroForm.get('tipo')?.touched">
+                            <span>El Tipo es obligatorio</span>
+                        </div>
+                      </div>
+           
+                      <div class="mb-3">
+                          <button class="btn btn-secondary float-start" routerLink="/">VOLVER</button>
+                          <button type="submit" [disabled]="registroForm.invalid" class="btn btn-success float-end">ACEPTAR</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
