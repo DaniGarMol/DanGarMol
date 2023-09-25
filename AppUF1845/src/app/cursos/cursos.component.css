@@ -1,0 +1,10 @@
+.titulo{
+    background-color:  #00214A;
+    color: white;
+    text-align: center;
+}
+
+table thead, tbody, tr, td{
+    background-color: #CDEAE8 ;
+}
+
