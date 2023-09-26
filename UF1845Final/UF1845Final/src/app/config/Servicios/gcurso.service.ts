@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { GCurso } from '../Modelos/gcurso';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GcursoService {
 
-  url= 'http://localhost:300/api/cursos/'
+  url= 'http://127.0.0.1:3700/api/cursos/'
 
   constructor(private http: HttpClient) { }
 

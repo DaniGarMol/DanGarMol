@@ -1,4 +1,4 @@
-const Curso = require("../../models/CursoModel");
+const Curso = require("../models/CursoModel");
 
 exports.crearCurso = async (req, res) => {
     try {
@@ -41,7 +41,7 @@ exports.actualizarCurso = async (req, res) => {
         res.status(500).send('Hubo un error');
     }
 }
-exports.obtenerCurso = asyn (req, res) => {
+exports.obtenerCurso = async (req, res) => {
     try {
         let curso = await Curso.findById(req.params.id);
         if(!curso) {

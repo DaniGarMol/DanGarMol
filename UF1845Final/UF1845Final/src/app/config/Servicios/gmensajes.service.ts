@@ -8,12 +8,12 @@ import { GMensaje } from '../Modelos/GMensaje';
 })
 export class GmensajeService {
 
-  url= 'http://localhost:300/api/mensajes/'
+  url= 'http://127.0.0.1:3700/api/mensajes/'
 
   constructor(private http: HttpClient) { }
 
     getMensajes(): Observable<any>{
-    return this.http.gets(this.url)
+    return this.http.get(this.url)
     }
     eliminarMensaje(id: string): Observable<any> {
     return this.http.delete(this.url + id);
