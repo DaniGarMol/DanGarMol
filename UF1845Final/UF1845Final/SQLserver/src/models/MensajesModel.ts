@@ -1,28 +1,25 @@
 import { DataTypes } from 'sequelize';
 import db from '../config/connectdb';
 
-const Curso = db.define('Curso',{
-    nombre: {
+const Mensajes = db.define('Mensajes',{
+    remitente: {
         type: DataTypes.STRING
     },
-    descripcion: {
+    email: {
         type: DataTypes.STRING
     },
-    categoria: {
+    asunto: {
         type: DataTypes.STRING
     },
-    imagen: {
+    mensaje: {
         type: DataTypes.STRING
     },
-    duracion: {
+    fecha_envio: {
         type: DataTypes.NUMBER
-    },
-    temas: {
-        type: DataTypes.STRING
     }
 
 }, {
     createdAt: false,
     updatedAt: false
 });
- export default Curso;
+ export default Mensajes;
